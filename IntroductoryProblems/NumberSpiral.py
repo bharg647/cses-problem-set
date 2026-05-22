@@ -9,13 +9,7 @@ def print_number(y: int, x: int) -> None:
         square_index = x
         x_bigger = True
     
-    sum = None
-    for i in range(1,square_index+1):
-        if i == 1:
-            sum = 1
-            continue
-        
-        sum = sum + 2*(i-1)
+    sum = square_index*(square_index-1)+1
     
     if square_index % 2 == 0:
         # Increasing down/left
