@@ -11,9 +11,9 @@ def print_num_ways(n: int) -> None:
             continue
         
         area = k ** 2
-        sum = math.factorial(area)/(math.factorial(2)*math.factorial(area-2))
+        sum = (area*(area-1))/2
         sum -= 4 * (k - 1) * (k - 2)
-        print(sum)
+        print(int(sum))
         
 
 if __name__ == "__main__":
