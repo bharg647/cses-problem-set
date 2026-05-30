@@ -6,6 +6,9 @@ def print_num_ways(n: int) -> None:
         if k == 1:
             print(0)
             continue
+        elif k == 2:
+            print(6)
+            continue
         
         area = k ** 2
         sum = math.factorial(area)/(math.factorial(2)*math.factorial(area-2))
